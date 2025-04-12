@@ -1,12 +1,10 @@
-import subprocess
-import shutil
+from script.scoop import *
+from script.symlink import *
+import ctypes
 
-if shutil.which("scoop") is None:
-    print("Installing scoop...")
-    command = """
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-    Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-    """
-    subprocess.run(["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", command], check=True)
-else:
-    print("Found scoop, skipping installation.")
+if __name__ == "__main__":
+    if ctypes.windll.shell32.IsUserAnAdmin() == 0:
+        print("This script requires administrator privileges to run.")
+        exit(-1)
+    install_scoop()
+    symlink_files()
