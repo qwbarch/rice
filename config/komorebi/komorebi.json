@@ -7,7 +7,7 @@
   "default_container_padding": 10,
   "global_work_area_offset": {
     "left": 10,
-    "right": 66,
+    "right": 60,
     "top": 10,
     "bottom": 10
   }, 
@@ -15,8 +15,7 @@
   "border_width": 4,
   "border_offset": -1,
   "border_colours": {
-    "single": "#d093fe",
-    "stack": "#d093fe"
+    "single": "#d093fe"
   },
   "animation": {
     "enabled": true,
@@ -44,24 +43,24 @@
         {
           "name": "II",
           "layout": "VerticalStack",
-		  "workspace_rules": [
-		    {
-		      "kind": "Exe",
-			  "id": "firefox.exe",
-			  "matching_strategy": "Equals"
-		    }
-		  ]
+          "workspace_rules": [
+            {
+              "kind": "Exe",
+              "id": "firefox.exe",
+              "matching_strategy": "Equals"
+            }
+          ]
         },
         {
           "name": "III",
           "layout": "HorizontalStack",
-		  "workspace_rules": [
-		    {
-		      "kind": "Exe",
-			  "id": "Bitwarden.exe",
-			  "matching_strategy": "Equals"
-		    }
-		  ]
+          "workspace_rules": [
+            {
+              "kind": "Exe",
+              "id": "Bitwarden.exe",
+              "matching_strategy": "Equals"
+              }
+          ]
         },
         {
           "name": "IV",
