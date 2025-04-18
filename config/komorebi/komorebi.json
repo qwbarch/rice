@@ -1,0 +1,85 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.35/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "default_workspace_padding": 0,
+  "default_container_padding": 10,
+  "global_work_area_offset": {
+    "left": 10,
+    "right": 66,
+    "top": 10,
+    "bottom": 10
+  }, 
+  "border": true,
+  "border_width": 4,
+  "border_offset": -1,
+  "border_colours": {
+    "single": "#d093fe",
+    "stack": "#d093fe"
+  },
+  "animation": {
+    "enabled": true,
+    "duration": 250,
+    "fps": 240,
+    "style": {
+      "movement": "EaseOutBack",
+      "transparency": "Linear"
+    }
+  },
+  "stackbar": {
+    "height": 40,
+    "mode": "OnStack",
+    "tabs": {
+      "width": 300
+    }
+  },
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP"
+        },
+        {
+          "name": "II",
+          "layout": "VerticalStack",
+		  "workspace_rules": [
+		    {
+		      "kind": "Exe",
+			  "id": "firefox.exe",
+			  "matching_strategy": "Equals"
+		    }
+		  ]
+        },
+        {
+          "name": "III",
+          "layout": "HorizontalStack",
+		  "workspace_rules": [
+		    {
+		      "kind": "Exe",
+			  "id": "Bitwarden.exe",
+			  "matching_strategy": "Equals"
+		    }
+		  ]
+        },
+        {
+          "name": "IV",
+          "layout": "UltrawideVerticalStack"
+        },
+        {
+          "name": "V",
+          "layout": "Rows"
+        },
+        {
+          "name": "VI",
+          "layout": "Grid"
+        },
+        {
+          "name": "VII",
+          "layout": "RightMainVerticalStack"
+        }
+      ]
+    }
+  ]
+}
