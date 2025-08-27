@@ -1,0 +1,27 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+html,
+body,
+#root {
+  cursor: default;
+  user-select: none;
+}
+
+#vertical-bar {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-right: 10px;
+}

@@ -1,0 +1,32 @@
+#volume-slider {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 4px;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  background: linear-gradient(
+    to right,
+    #d093fe var(--slider-value, 0%),
+    #fff var(--slider-value, 0%)
+  );
+  border-radius: 5px;
+  outline: none;
+  margin-top: 140px;
+  margin-bottom: 55px;
+}
+
+#volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #d093fe;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#toggle-audio {
+  cursor: pointer;
+  font-size: 16px;
+}
