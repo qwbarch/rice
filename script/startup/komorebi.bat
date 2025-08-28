@@ -1,1 +1,1 @@
-komorebic start --whkd
+start "" komorebic start --whkd

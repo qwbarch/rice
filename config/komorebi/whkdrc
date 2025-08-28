@@ -46,4 +46,4 @@ ralt + shift + 8                   : komorebic move-to-workspace 7
 
 # Applications
 ralt + return           : alacritty
-ralt + d                : flow
+ralt + d                : "%USERPROFILE%\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
