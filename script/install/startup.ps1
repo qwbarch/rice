@@ -27,7 +27,8 @@ function CreateStartupShortcuts {
     $userProfile = (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\*" | Where-Object { $_.ProfileImagePath -like "*\$username" }).ProfileImagePath
     $startupPath = Join-Path $userProfile 'AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup'
 
+    CreateShortcut -FilePath "$(Get-Location)\script\startup\zebar.bat" -ShortcutPath "$startupPath\zebar.bat.lnk"
+    CreateShortcut -FilePath "$(scoop prefix flow-launcher)\Flow.Launcher.exe" -ShortcutPath "$startupPath\Flow.Launcher.exe.lnk"
     CreateShortcut -FilePath "$(Get-Location)\script\startup\keybind.ahk" -ShortcutPath "$startupPath\keybind.ahk.lnk"
     CreateShortcut -FilePath "$(Get-Location)\script\startup\komorebi.bat" -ShortcutPath "$startupPath\komorebi.bat.lnk"
-    CreateShortcut -FilePath "$(Get-Location)\script\startup\zebar.bat" -ShortcutPath "$startupPath\zebar.bat.lnk"
 }

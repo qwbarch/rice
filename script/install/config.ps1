@@ -38,4 +38,7 @@ function CreateConfigSymlinks {
     CreateSymlink -FilePath "$config\komorebi\komorebi.json" -SymlinkPath "$komorebi\komorebi.json"
     CreateSymlink -FilePath "$config\komorebi\applications.json" -SymlinkPath "$komorebi\applications.json"
     CreateSymlink -FilePath "$config\komorebi\whkdrc" -SymlinkPath "$whkd\whkdrc"
+
+    # Flow launcher.
+    CreateSymlink -FilePath "$config\flow-launcher\Settings.json" -SymlinkPath "$(scoop prefix flow-launcher)\app-1.20.2\UserData\Settings\Settings.json"
 }
