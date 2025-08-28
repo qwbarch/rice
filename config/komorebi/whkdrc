@@ -45,5 +45,5 @@ ralt + shift + oem_102             : komorebic move-to-workspace 6
 ralt + shift + 8                   : komorebic move-to-workspace 7
 
 # Applications
-ralt + return           : alacritty
+ralt + return           : wezterm
 ralt + d                : "%USERPROFILE%\scoop\apps\flow-launcher\current\Flow.Launcher.exe"

@@ -41,4 +41,7 @@ function CreateConfigSymlinks {
 
     # Flow launcher.
     CreateSymlink -FilePath "$config\flow-launcher\Settings.json" -SymlinkPath "$(scoop prefix flow-launcher)\app-1.20.2\UserData\Settings\Settings.json"
+
+    # Wezterm.
+    CreateSymlink -FilePath "$config\wezterm\.wezterm.lua" -SymlinkPath "$userProfile\.wezterm.lua"
 }
