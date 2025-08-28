@@ -1,0 +1,49 @@
+.shell cmd
+
+ralt + shift + o         : komorebic reload-configuration
+
+ralt + shift + q        : komorebic close
+
+# Focus windows
+ralt + h                 : komorebic focus left
+ralt + j                 : komorebic focus down
+ralt + k                 : komorebic focus up
+ralt + l                 : komorebic focus right
+
+# Move windows
+ralt + shift + h         : komorebic move left
+ralt + shift + j         : komorebic move down
+ralt + shift + k         : komorebic move up
+ralt + shift + l         : komorebic move right
+
+# Window manager options
+ralt + shift + r         : komorebic retile
+ralt + f                 : komorebic toggle-maximize
+
+
+# Layouts
+ralt + x                 : komorebic flip-layout horizontal
+ralt + z                 : komorebic flip-layout vertical
+
+# Workspaces
+ralt + VK_OEM_5          : komorebic focus-workspace 0
+ralt + space             : komorebic focus-workspace 1
+ralt + n                 : komorebic focus-workspace 2
+ralt + m                 : komorebic focus-workspace 3
+ralt + oem_comma         : komorebic focus-workspace 4
+ralt + oem_period        : komorebic focus-workspace 5
+ralt + oem_102           : komorebic focus-workspace 6
+
+# Move windows across workspaces
+ralt + shift + back                : komorebic move-to-workspace 0
+ralt + shift + space               : komorebic move-to-workspace 1
+ralt + shift + n                   : komorebic move-to-workspace 2
+ralt + shift + m                   : komorebic move-to-workspace 3
+ralt + shift + oem_comma           : komorebic move-to-workspace 4
+ralt + shift + oem_period          : komorebic move-to-workspace 5
+ralt + shift + oem_102             : komorebic move-to-workspace 6
+ralt + shift + 8                   : komorebic move-to-workspace 7
+
+# Applications
+ralt + return           : alacritty
+ralt + d                : flow

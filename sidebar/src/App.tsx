@@ -66,9 +66,9 @@ export default function App() {
     providers.onOutput(() => setOutput(providers.outputMap));
 
     // Disable right-click menu.
-    //window.addEventListener("contextmenu", disableContextMenu);
+    window.addEventListener("contextmenu", disableContextMenu);
 
-    //return () => window.removeEventListener("contextmenu", disableContextMenu);
+    return () => window.removeEventListener("contextmenu", disableContextMenu);
   }, []);
 
   const { time, meridiem } = formatTime(output.date);
