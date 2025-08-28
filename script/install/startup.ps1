@@ -29,4 +29,5 @@ function CreateStartupShortcuts {
 
     CreateShortcut -FilePath "$(Get-Location)\script\startup\keybind.ahk" -ShortcutPath "$startupPath\keybind.ahk.lnk"
     CreateShortcut -FilePath "$(Get-Location)\script\startup\komorebi.bat" -ShortcutPath "$startupPath\komorebi.bat.lnk"
+    CreateShortcut -FilePath "$(Get-Location)\script\startup\zebar.bat" -ShortcutPath "$startupPath\zebar.bat.lnk"
 }
